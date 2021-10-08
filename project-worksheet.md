@@ -18,12 +18,12 @@ Professional portfolio to showcase my past and current projects to future potent
 
 ## Wireframes  
 
-- [Mobile](https://res.cloudinary.com/ingl3585/image/upload/v1633731464/wireframe-mobile.heic)
-- [Desktop](https://res.cloudinary.com/ingl3585/image/upload/v1633731444/wireframe-desktop.heic)
+- [Mobile](https://imgur.com/uceItWo)
+- [Desktop](https://imgur.com/043uH6s)
 
 ## Time/Priority Matrix 
 
-[Link](https://res.cloudinary.com/ingl3585/image/upload/v1633731478/time-priority-matrix.heic)
+[Link](https://imgur.com/CP0BjlH)
 
 #### MVP
 | Component | Priority | Estimated Time | Actual Time |
