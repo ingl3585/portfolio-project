@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 0.5fr 2fr 2fr 2fr;
+    width: 100vw;
+    height: 100vh;
+}
+
+#header {
+    border: 1px solid red;
+    grid-column: 1/4;
+    grid-row: 1/2;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.weather {
+    grid-column: 1/2;
+}
+
+.name {
+    grid-column: 2/3;
+}
+
+.icons-hamburger {
+    grid-column: 3/4;
+}
+
+#intro {
+    border: 1px solid yellow;
+    grid-column: 1/4;
+    grid-row: 2/3;
+}
+
+#projects {
+    border: 1px solid green;
+    grid-column: 1/4;
+    grid-row: 3/4;
+}
+
+#contact-me {
+    border: 1px solid blue;
+    grid-column: 1/4;
+    grid-row: 4/5;
+}
+
+#desktop-bottom-links {
+    display: none;
+}
+
+@media screen and (min-width: 992px) {
+    #container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 0.5fr 2fr 2fr 2fr 0.25fr;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    #header {
+        border: 1px solid red;
+        grid-column: 1/4;
+        grid-row: 1/2;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .weather {
+        grid-column: 1/2;
+    }
+
+    .name {
+        grid-column: 2/3;
+    }
+
+    .icons-hamburger {
+        grid-column: 3/4;
+    }
+
+    #intro {
+        border: 1px solid yellow;
+        grid-column: 1/4;
+        grid-row: 2/3;
+    }
+
+    #projects {
+        border: 1px solid green;
+        grid-column: 1/4;
+        grid-row: 3/4;
+    }
+
+    #contact-me {
+        border: 1px solid blue;
+        grid-column: 1/4;
+        grid-row: 4/5;
+    }
+
+    #desktop-bottom-links {
+        display: block;
+        border: 1px solid purple;
+        grid-column: 1/4;
+        grid-row: 5/6;
+    }
+    }
