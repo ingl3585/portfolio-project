@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Scheherazade+New&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-family: 'Scheherazade New', serif;
+}
+
+/* Header Section */
+
+#header {
+    margin: 10px;
+}
+
+.weather p {
+    margin: 0 auto;
+    align-self: center;
+}
+
+.name p {
+    margin: 0 auto;
+    align-self: center;
+}
+
+.icons-hamburger p {
+    margin: 0 auto;
+    align-self: center;
+}
+
+/* About Me Section */
+
+#intro {
+    margin: 10px;
+}
+
+.about-me {
+    padding: 5%;
+}
+
+.about-me-textbox {
+    margin: 0 auto;
+    padding: 5%;
+    text-align: center;
+    background-color: white;
+    border: 1px solid black;
+}
+
+.about-me-textbox p {
+    color: black;
+    font-size: 1em;
+}
+
+/* Projects Section */
+
+#projects {
+    margin: 10px;
+}
+
+.projects-headline p {
+    margin: 0 auto;
+    align-self: center;
+}
+
+.left-slider {
+    margin: 0 auto;
+    align-self: center;
+}
+
+.satres-list-description p {
+    margin: 0 auto;
+    align-self: center;
+}
+
+.satres-list-picture {
+    background-image: url("/img/satres-list.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.startup-matchmaker-description p {
+    margin: 0 auto;
+    align-self: center;
+}
+
+.startup-matchmaker-picture {
+    background-image: url("/img/startup-matchmaker.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.third-project-description p {
+    margin: 0 auto;
+    align-self: center;
+}
+
+.third-project-picture {
+    background-image: url("/img/startup-matchmaker.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.right-slider {
+    margin: 0 auto;
+    align-self: center;
+}
+
+/* Contact Me Section */
+
+#contact-me {
+    margin: 10px;
+    text-align: center;
+}
+.contact-text-box {
+    margin: 5%;
+    padding: 5%;
+    background-color: white;
+    border: 1px solid black;
+}
+
+.contact-text-box p {
+    color: black;
+    font-size: 1em;
+}
+
+.email-input {
+    margin: 5%;
+    border: 1px solid black;
+}
+
+.message-input {
+    margin: 5%;
+    border: 1px solid black;
+}
+
+.submit-button {
+    margin: 5%;
+    padding: 1%;
+    border: 1px solid black;
+}
+
+.bottom-nav {
+    list-style-type: none;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}

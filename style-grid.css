@@ -1,70 +1,17 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-#container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 0.5fr 2fr 2fr 2fr;
-    width: 100vw;
-    height: 100vh;
-}
-
-#header {
-    border: 1px solid red;
-    grid-column: 1/4;
-    grid-row: 1/2;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-}
-
-.weather {
-    grid-column: 1/2;
-}
-
-.name {
-    grid-column: 2/3;
-}
-
-.icons-hamburger {
-    grid-column: 3/4;
-}
-
-#intro {
-    border: 1px solid yellow;
-    grid-column: 1/4;
-    grid-row: 2/3;
-}
-
-#projects {
-    border: 1px solid green;
-    grid-column: 1/4;
-    grid-row: 3/4;
-}
-
-#contact-me {
-    border: 1px solid blue;
-    grid-column: 1/4;
-    grid-row: 4/5;
-}
-
-#desktop-bottom-links {
-    display: none;
-}
+/******** Desktop Sizing ********/
 
 @media screen and (min-width: 992px) {
     #container {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 0.5fr 2fr 2fr 2fr 0.25fr;
+        grid-template-rows: 1fr 4fr 4fr 3fr 0.5fr;
         width: 100vw;
         height: 100vh;
     }
 
+    /* Header Section */
+
     #header {
-        border: 1px solid red;
         grid-column: 1/4;
         grid-row: 1/2;
         display: grid;
@@ -73,38 +20,439 @@
 
     .weather {
         grid-column: 1/2;
+        display: flex;
     }
 
     .name {
         grid-column: 2/3;
+        display: flex;
     }
 
     .icons-hamburger {
         grid-column: 3/4;
+        display: flex;
     }
 
+    /* About Me Section */
+
     #intro {
-        border: 1px solid yellow;
         grid-column: 1/4;
+        grid-row: 2/3;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .about-me {
+        grid-column: 1/4;
+        display: flex;
+    }
+
+    /* Projects Section */
+
+    #projects {
+        grid-column: 1/4;
+        grid-row: 3/4;
+        display: grid;
+        grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
+        grid-template-rows: 1fr 2fr 1fr;
+        gap: 10px;
+    }
+
+    .projects-headline {
+        grid-column: 3/4;
+        grid-row: 1/2;
+        display: flex;
+    }
+
+    .left-slider {
+        grid-column: 1/2;
         grid-row: 2/3;
     }
 
-    #projects {
-        border: 1px solid green;
-        grid-column: 1/4;
+    .satres-list-description {
+        grid-column: 2/3;
         grid-row: 3/4;
+        display: flex;
     }
 
+    .satres-list-picture {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+
+    .startup-matchmaker-description {
+        grid-column: 3/4;
+        grid-row: 3/4;
+        display: flex;
+    }
+
+    .startup-matchmaker-picture {
+        grid-column: 3/4;
+        grid-row: 2/3;
+    }
+
+    .third-project-description {
+        grid-column: 4/5;
+        grid-row: 3/4;
+        display: flex;
+    }
+
+    .third-project-picture {
+        grid-column: 4/5;
+        grid-row: 2/3;
+    }
+
+    .right-slider {
+        grid-column: 5/6;
+        grid-row: 2/3;
+    }
+
+    /* Contact Me Section */
+
     #contact-me {
-        border: 1px solid blue;
+        grid-column: 1/4;
+        grid-row: 4/5;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contact-text-box {
+        grid-column: 1/2;
+    }
+
+   .form {
+       grid-column: 2/3;
+       grid-row: 1/3;
+       display: flex;
+       align-content: center;
+       flex-direction: column;
+       justify-content: center;
+   }
+
+    .bottom-nav {
+        display: none;
+    }
+
+    #desktop-bottom-links {
+        grid-column: 1/4;
+        grid-row: 5/6;
+        display: flex;
+        align-items: center;
+    }
+
+    .bottom-desktop-nav {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .bottom-desktop-nav li {
+        margin: 0 10px 0 35px;
+        list-style-type: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/******** Tablet Sizing ********/
+
+@media screen and (min-width: 767px) and (max-width: 992px) {
+    #container {
+        display: grid;
+        grid-template-rows: 1fr 4fr 4fr 4fr 1fr;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    /* Header Section */
+
+    #header {
+        grid-column: 1/4;
+        grid-row: 1/2;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .weather {
+        grid-column: 1/2;
+        display: flex;
+    }
+
+    .name {
+        grid-column: 2/3;
+        display: flex;
+    }
+
+    .icons-hamburger {
+        grid-column: 3/4;
+        display: flex;
+    }
+
+    /* About Me Section */
+
+    #intro {
+        grid-column: 1/4;
+        grid-row: 2/3;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .about-me {
+        grid-column: 1/4;
+        display: flex;
+    }
+
+    /* Projects Section */
+
+     #projects {
+        grid-column: 1/4;
+        grid-row: 3/4;
+        display: grid;
+        grid-template-rows: repeat(15, 1fr);
+        gap: 30px;
+    }
+
+    .projects-headline {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        display: flex;
+    }
+
+    .left-slider {
+        display: none;
+    }
+
+    .satres-list-description {
+        display: none;
+    }
+
+    .satres-list-picture {
+        grid-column: 1/2;
+        grid-row: 2/9;
+    }
+
+    .startup-matchmaker-description {
+        display: none;
+    }
+
+    .startup-matchmaker-picture {
+        grid-column: 1/2;
+        grid-row: 9/16;
+    }
+
+    .third-project-description {
+        display: none;
+    }
+
+    .third-project-picture {
+        display: none;
+    }
+
+    .right-slider {
+        display: none;
+    }
+
+    /* Contact Me Section */
+
+    #contact-me {
         grid-column: 1/4;
         grid-row: 4/5;
     }
 
+    .email-input {
+        display: none;
+    }
+
+    .message-input {
+        display: none;
+    }
+
+    .email-button {
+        display: none;
+    }
+
     #desktop-bottom-links {
-        display: block;
-        border: 1px solid purple;
+        display: none;
+    }
+}
+
+/******** Mobile Sizing ********/
+
+@media screen and (max-width: 767px) {
+    #container {
+        display: grid;
+        grid-template-rows: 1fr 4fr 4fr 2fr;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    /* Header Section */
+
+    #header {
         grid-column: 1/4;
-        grid-row: 5/6;
+        grid-row: 1/2;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
     }
+
+    .weather {
+        grid-column: 1/2;
+        display: flex;
     }
+
+    .name {
+        grid-column: 2/3;
+        display: flex;
+    }
+
+    .icons-hamburger {
+        grid-column: 3/4;
+        display: flex;
+    }
+
+    /* About Me Section */
+
+    #intro {
+        grid-column: 1/4;
+        grid-row: 2/3;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .about-me {
+        grid-column: 1/4;
+        display: flex;
+    }
+
+    /* Projects Section */
+
+    #projects {
+        grid-column: 1/4;
+        grid-row: 3/4;
+        display: grid;
+        grid-template-rows: repeat(15, 1fr);
+        gap: 3px;
+    }
+
+    .projects-headline {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        display: flex;
+    }
+
+    .left-slider {
+        display: none;
+    }
+
+    .satres-list-description {
+        display: none;
+    }
+
+    .satres-list-picture {
+        grid-column: 1/2;
+        grid-row: 2/9;
+    }
+
+    .startup-matchmaker-description {
+        display: none;
+    }
+
+    .startup-matchmaker-picture {
+        grid-column: 1/2;
+        grid-row: 9/16;
+    }
+
+    .third-project-description {
+        display: none;
+    }
+
+    .third-project-picture {
+        display: none;
+    }
+
+    .right-slider {
+        display: none;
+    }
+
+    /* Contact Me Section */
+
+    #contact-me {
+        grid-column: 1/4;
+        grid-row: 4/5;
+    }
+
+    .email-input {
+        display: none;
+    }
+
+    .message-input {
+        display: none;
+    }
+
+    .email-button {
+        display: none;
+    }
+
+    #desktop-bottom-links {
+        display: none;
+    }
+}
