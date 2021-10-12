@@ -49,6 +49,16 @@ a {
     padding: 0 30px;
 }
 
+.linkedin {
+    height: 25px;
+    width: 25px;
+}
+
+.github {
+    height: 25px;
+    width: 25px;
+}
+
 .hamburger p {
     margin: 0 auto;
     align-self: center;
@@ -152,15 +162,14 @@ a {
 }
 
 .fourth-project-picture {
-    background-image: url("/img/tp-logo.gif");
+    background-image: url("/img/fp-logo.gif");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    margin: 10px 15px;
 }
 
 .fourth-project-picture:hover {
-    background-image: url("/img/tp-logo.gif");
+    background-image: url("/img/fp-logo.gif");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -230,9 +239,20 @@ a {
 
 .bottom-desktop-nav li {
     margin-left: 45px;
+    padding: 5px 0;
     list-style-type: none;
 }
 
 #desktop-bottom-links {
     align-items: center;
+}
+
+.resume-icon {
+    height: 25px;
+    width: 25px;
+}
+
+.email-icon {
+    height: 25px;
+    width: 25px;
 }

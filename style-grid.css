@@ -105,6 +105,14 @@
         grid-row: 2/3;
     }
 
+    .fourth-project-title {
+        display: none;
+    }
+
+    .fourth-project-picture {
+        display: none;
+    }
+
     .right-slider {
         grid-column: 5/6;
         grid-row: 2/3;
@@ -347,6 +355,14 @@
         display: none;
     }
 
+    .fourth-project-title {
+        display: none;
+    }
+
+    .fourth-project-picture {
+        display: none;
+    }
+
     .right-slider {
         display: none;
     }
@@ -516,6 +532,14 @@
     }
 
     .third-project-picture {
+        display: none;
+    }
+
+    .fourth-project-title {
+        display: none;
+    }
+
+    .fourth-project-picture {
         display: none;
     }
 
