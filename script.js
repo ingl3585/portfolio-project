@@ -32,3 +32,5 @@ const showWeather = (data) => {
 
 	$('.weather-data').append(Math.round(temperature) + '°F ' + conditions);
 };
+
+// Project Slider

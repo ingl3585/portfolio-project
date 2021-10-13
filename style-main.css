@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Scheherazade+New&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@300&display=swap');
 
 * {
     box-sizing: border-box;
@@ -12,14 +12,12 @@ body {
 }
 
 p {
-    font-family: 'Scheherazade New', serif;
-    color: #FEFEFE;
+    font-family: 'Playfair Display', serif;
 }
 
 a {
     text-decoration: none;
     color: #FEFEFE;
-    font-size: 90%;
 }
 
 /* Header Section */
@@ -40,7 +38,6 @@ a {
 
 .icons {
     margin: 0 auto;
-    font-size: 95%;
     align-self: center;
     list-style-type: none;
 }
@@ -50,18 +47,13 @@ a {
 }
 
 .linkedin {
-    height: 25px;
-    width: 25px;
+    height: 40px;
+    width: 40px;
 }
 
 .github {
-    height: 25px;
-    width: 25px;
-}
-
-.hamburger p {
-    margin: 0 auto;
-    align-self: center;
+    height: 40px;
+    width: 40px;
 }
 
 /* About Me Section */
@@ -78,6 +70,7 @@ a {
     padding: 25px;
     text-align: center;
     align-self: center;
+    line-height: 2.5;
     border: 1px solid #FEFEFE;
 }
 
@@ -96,7 +89,6 @@ a {
 .left-slider {
     margin: 0 auto;
     align-self: center;
-    font-size: 90%;
 }
 
 .satres-list-title p {
@@ -124,7 +116,7 @@ a {
 }
 
 .startup-matchmaker-picture {
-    background-image: url("/img/ml-logo.gif");
+    background-image: url("/img/sm-logo.gif");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -178,7 +170,6 @@ a {
 .right-slider {
     margin: 0 auto;
     align-self: center;
-    font-size: 90%;
 }
 
 /* Contact Me Section */
@@ -186,7 +177,6 @@ a {
 #contact-me {
     text-align: center;
     padding: 25px;
-    border-bottom: 1px solid #FEFEFE;
 }
 
 .contact-me-headline {
@@ -197,6 +187,7 @@ a {
     padding: 25px;
     text-align: center;
     align-self: center;
+    line-height: 2.5;
     border: 1px solid #FEFEFE;
 }
 
@@ -226,7 +217,13 @@ a {
 .submit-button {
     padding: 10px;
     border: 1px solid #FEFEFE;
-    text-align: center;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.submit-button a {
+    align-self: center;
 }
 
 .bottom-nav {
@@ -239,7 +236,7 @@ a {
 
 .bottom-desktop-nav li {
     margin-left: 45px;
-    padding: 5px 0;
+    padding: 20px 0 10px 0;
     list-style-type: none;
 }
 
@@ -248,11 +245,21 @@ a {
 }
 
 .resume-icon {
-    height: 25px;
-    width: 25px;
+    height: 30px;
+    width: 30px;
+}
+
+.linkedin-bottom {
+    height: 30px;
+    width: 30px;
+}
+
+.github-bottom {
+    height: 30px;
+    width: 30px;
 }
 
 .email-icon {
-    height: 25px;
-    width: 25px;
+    height: 30px;
+    width: 30px;
 }
